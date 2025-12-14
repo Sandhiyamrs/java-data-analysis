@@ -1,1 +1,8 @@
+[
+  {"name": "Alice", "age": 28, "department": "Engineering", "salary": 60000},
+  {"name": "Bob", "age": 32, "department": "HR", "salary": 55000},
+  {"name": "Charlie", "age": 25, "department": "Marketing", "salary": 50000},
+  {"name": "Diana", "age": 30, "department": "Engineering", "salary": 65000},
+  {"name": "Evan", "age": 35, "department": "Finance", "salary": 70000}
+]
 
