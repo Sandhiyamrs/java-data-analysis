@@ -17,4 +17,3 @@ public class Statistics {
         System.out.println("Median: " + median);
     }
 }
-
