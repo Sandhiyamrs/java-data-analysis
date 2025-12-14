@@ -42,5 +42,5 @@ See [RUN.md](RUN.md) for instructions on compiling and running the projects.
 ---
 
 ## 📜 License
-MIT License © 2025 Sandy
+MIT License © 2025 Sandhiya M
 
