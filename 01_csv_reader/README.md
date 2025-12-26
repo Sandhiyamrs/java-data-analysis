@@ -48,3 +48,23 @@ By completing this module, you will learn how to:
 ```bash
 javac CSVReader.java
 java CSVReader
+
+🧪 Example Use Case
+
+Load sales or user data from CSV
+
+Filter records based on rules
+
+Save cleaned data for further analysis
+
+🔗 Related Modules
+
+Next: Module 02 – JSON Processor
+
+📌 Notes
+
+Uses pure Core Java
+
+No external CSV libraries
+
+Suitable for beginners
