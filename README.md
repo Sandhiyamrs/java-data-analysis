@@ -2,20 +2,20 @@
 
 ![Java](https://img.shields.io/badge/Language-Java-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
-![GitHub Repo Size](https://img.shields.io/github/repo-size/Sandhiyamrs/java-data-analysis)
 
 ---
 
 ## 🧩 Overview
 
-**Java Data Analysis Projects** is a curated collection of Java programs that demonstrate  
-real-world **data analysis techniques** using **CSV**, **JSON**, and **statistical methods**.
+**Java Data Analysis Projects** is a comprehensive, modular repository showcasing  
+**data analysis, statistics, visualization, time-series, machine learning, and big-data concepts**  
+implemented purely in **Core Java**.
 
 This repository is ideal for:
-- Java learners
-- Data analysis beginners
-- Academic mini-projects
-- Portfolio building
+- 🎓 Students & academic projects
+- 💻 Java developers entering data analytics
+- 📊 Data analysis fundamentals
+- 📁 Portfolio & GitHub showcase
 
 ---
 
@@ -25,47 +25,54 @@ This repository is ideal for:
 |----:|------------|-------------|
 | 01 | CSV Reader | Read, filter, validate, write, and analyze CSV files |
 | 02 | JSON Processor | Parse, flatten, validate, and write JSON data |
-| 03 | Statistics | Compute mean, median, mode, percentiles, and distributions |
-| 04 | Data Visualization | Generate bar charts and line charts (optional JFreeChart) |
-| 05 | Demo Dataset | Realistic CSV & JSON datasets for testing and demos |
-| 06 | Data Cleaning | Handle missing values, duplicates, normalization, outliers |
+| 03 | Statistics | Mean, median, mode, percentiles, distributions |
+| 04 | Data Visualization | Bar & line charts (optional JFreeChart) |
+| 05 | Demo Dataset | Realistic CSV & JSON datasets |
+| 06 | Data Cleaning | Missing values, duplicates, normalization, outliers |
 | 07 | Advanced Statistics | Correlation, covariance, regression, probability |
-| 08 | Time Series Analysis | Trend, seasonality, forecasting, moving averages |
-| 09 | Data Aggregation | Grouping, pivot tables, summaries, validations |
-| 10 | Real-World Projects | Sales, weather, logs, stock, customer behavior |
+| 08 | Time Series Analysis | Trend, seasonality, forecasting |
+| 09 | Data Aggregation | Grouping, pivot tables, summary reports |
+| 10 | Real-World Projects | Sales, weather, logs, stocks, customers |
+| 11 | File Handling Utilities | Advanced file I/O and processing helpers |
+| 12 | Performance Analysis | Benchmarking and optimization techniques |
+| 13 | Data Validation Framework | Reusable validation utilities |
+| 14 | Machine Learning Basics | KNN, train-test split, evaluation metrics |
+| 15 | Big Data Processing | Chunk processing, streaming, parallel execution |
 
 ---
 
 ## 🚀 Key Features
 
-- 📄 CSV & JSON file handling
-- 📊 Statistical computations
+- 📄 CSV & JSON parsing
+- 📊 Statistical analysis
 - 🧹 Data cleaning & preprocessing
-- 📈 Basic data visualization
-- ⏱ Time-series analysis
-- 🧠 Real-world analytical projects
-- 🧪 Modular and reusable Java code
+- 📈 Data visualization
+- ⏱ Time-series analytics
+- 🤖 Basic machine learning
+- ⚡ Big-data style processing
+- 🧪 Modular & reusable Java code
 
 ---
 
 ## 🛠 Technologies Used
 
-- **Java (Core Java)**
-- File I/O (java.io, java.nio)
-- Collections & Streams
-- Optional: JFreeChart (for visualization)
+- **Core Java**
+- File I/O (`java.io`, `java.nio`)
+- Collections & Streams API
+- Multithreading & parallel streams
+- Optional: **JFreeChart**
 
 ---
 
 ## ▶️ How to Run
 
-Detailed instructions are available in the file below:
+Step-by-step execution instructions are provided here:
 
 ➡️ **[RUN.md](RUN.md)**
 
 ---
 
-## 📌 Folder Structure (High Level)
+## 📁 Folder Structure (High Level)
 
 java-data-analysis/
 
@@ -89,6 +96,16 @@ java-data-analysis/
 
 ├── 10_real_world_projects/
 
+├── 11_file_handling_utilities/
+
+├── 12_performance_analysis/
+
+├── 13_data_validation_framework/
+
+├── 14_machine_learning_basics/
+
+├── 15_big_data_processing/
+
 ├── RUN.md
 
 ├── README.md
@@ -103,9 +120,10 @@ java-data-analysis/
 
 - 🔗 Database integration (MySQL, PostgreSQL)
 - 📊 Interactive dashboards
-- 🖥 CLI-based data exploration tool
-- ⚙️ Maven / Gradle build setup
-- 🧪 Unit tests & benchmarking
+- 🧠 Advanced ML & NLP modules
+- 🖥 CLI-based data exploration
+- ⚙️ Maven / Gradle build support
+- 🧪 JUnit testing suite
 
 ---
 
@@ -116,4 +134,4 @@ java-data-analysis/
 
 ---
 
-⭐ *If you find this repository helpful, consider starring it on GitHub!*
+⭐ *If you find this repository useful, consider giving it a star on GitHub!*
