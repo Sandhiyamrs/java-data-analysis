@@ -2,6 +2,7 @@
 
 ![Java](https://img.shields.io/badge/Language-Java-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
+![GitHub Repo Size](https://img.shields.io/github/repo-size/<your-username>/java-data-analysis)
 
 ---
 
