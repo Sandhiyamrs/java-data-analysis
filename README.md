@@ -68,21 +68,34 @@ Detailed instructions are available in the file below:
 ## 📌 Folder Structure (High Level)
 
 java-data-analysis/
-├── 01_csv_reader/
-├── 02_json_processor/
-├── 03_statistics/
-├── 04_data_visualization/
-├── 05_demo_dataset/
-├── 06_data_cleaning/
-├── 07_advanced_statistics/
-├── 08_time_series_analysis/
-├── 09_data_aggregation/
-├── 10_real_world_projects/
-├── RUN.md
-├── README.md
-├── LICENSE
-└── .gitignore
 
+├── 01_csv_reader/
+
+├── 02_json_processor/
+
+├── 03_statistics/
+
+├── 04_data_visualization/
+
+├── 05_demo_dataset/
+
+├── 06_data_cleaning/
+
+├── 07_advanced_statistics/
+
+├── 08_time_series_analysis/
+
+├── 09_data_aggregation/
+
+├── 10_real_world_projects/
+
+├── RUN.md
+
+├── README.md
+
+├── LICENSE
+
+└── .gitignore
 
 ---
 
