@@ -1,13 +1,15 @@
 import java.util.*;
+import java.util.function.Predicate;
 
 public class CSVFilter {
 
-    public static List<String[]> filterByColumn(
-            List<String[]> rows, int colIndex, String value) {
-
+    public static List<String[]> filter(
+            List<String[]> rows,
+            Predicate<String[]> condition
+    ) {
         List<String[]> result = new ArrayList<>();
         for (String[] row : rows) {
-            if (row[colIndex].equals(value)) {
+            if (condition.test(row)) {
                 result.add(row);
             }
         }
