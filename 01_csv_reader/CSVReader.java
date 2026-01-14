@@ -1,21 +1,17 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.util.*;
 
 public class CSVReader {
-    public static void main(String[] args) {
-        String path = "../05_demo_dataset/sample_data.csv";
-        String line;
-        try (BufferedReader br = new BufferedReader(new FileReader(path))) {
+
+    public static List<String[]> read(String filePath) throws IOException {
+        List<String[]> rows = new ArrayList<>();
+
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            String line;
             while ((line = br.readLine()) != null) {
-                String[] values = line.split(",");
-                for (String val : values) {
-                    System.out.print(val + "\t");
-                }
-                System.out.println();
+                rows.add(line.split(","));
             }
-        } catch (IOException e) {
-            System.out.println("Error reading CSV file: " + e.getMessage());
         }
+        return rows;
     }
 }
