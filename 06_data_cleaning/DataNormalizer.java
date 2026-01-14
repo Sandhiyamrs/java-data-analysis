@@ -2,13 +2,13 @@ import java.util.*;
 
 public class DataNormalizer {
 
-    public static List<Double> minMaxNormalize(List<Double> data) {
+    public static List<Double> normalize(List<Double> data) {
         double min = Collections.min(data);
         double max = Collections.max(data);
 
         List<Double> normalized = new ArrayList<>();
-        for (double value : data) {
-            normalized.add((value - min) / (max - min));
+        for (double v : data) {
+            normalized.add((v - min) / (max - min));
         }
         return normalized;
     }
