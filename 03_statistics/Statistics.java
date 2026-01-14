@@ -1,19 +1,13 @@
-import java.util.Arrays;
+import java.util.*;
 
 public class Statistics {
-    public static void main(String[] args) {
-        double[] data = {10, 20, 20, 30, 40, 50};
+
+    public static double mean(List<Double> data) {
+        if (data == null || data.isEmpty())
+            throw new IllegalArgumentException("Dataset is empty");
+
         double sum = 0;
-        for (double num : data) sum += num;
-
-        double mean = sum / data.length;
-
-        Arrays.sort(data);
-        double median = data.length % 2 == 0
-                ? (data[data.length/2 - 1] + data[data.length/2]) / 2
-                : data[data.length/2];
-
-        System.out.println("Mean: " + mean);
-        System.out.println("Median: " + median);
+        for (double v : data) sum += v;
+        return sum / data.size();
     }
 }
