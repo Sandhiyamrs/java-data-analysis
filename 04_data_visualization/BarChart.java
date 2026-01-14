@@ -1,12 +1,17 @@
-import java.util.*;
+import java.util.List;
 
-public class BarChart {
+public class BarChart extends SimpleChart {
 
-    public static void draw(Map<String, Integer> data) {
-        for (Map.Entry<String, Integer> e : data.entrySet()) {
-            System.out.print(e.getKey() + " | ");
-            for (int i = 0; i < e.getValue(); i++) {
-                System.out.print("*");
+    public BarChart(List<Double> data) {
+        super(data);
+    }
+
+    @Override
+    public void render() {
+        for (double value : data) {
+            System.out.printf("%5.1f | ", value);
+            for (int i = 0; i < value; i++) {
+                System.out.print("█");
             }
             System.out.println();
         }
