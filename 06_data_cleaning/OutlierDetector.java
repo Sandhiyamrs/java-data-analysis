@@ -3,29 +3,22 @@ import java.util.*;
 public class OutlierDetector {
 
     public static List<Double> removeOutliers(List<Double> data) {
-        double mean = calculateMean(data);
-        double stdDev = calculateStdDev(data, mean);
+        if (data.size() < 4) return data;
+
+        double mean = data.stream().mapToDouble(Double::doubleValue).average().orElse(0);
+        double stdDev = Math.sqrt(
+            data.stream()
+                .mapToDouble(v -> Math.pow(v - mean, 2))
+                .average()
+                .orElse(0)
+        );
 
         List<Double> filtered = new ArrayList<>();
-        for (Double value : data) {
-            if (Math.abs(value - mean) <= 2 * stdDev) {
-                filtered.add(value);
+        for (double v : data) {
+            if (Math.abs(v - mean) <= 2 * stdDev) {
+                filtered.add(v);
             }
         }
         return filtered;
-    }
-
-    private static double calculateMean(List<Double> data) {
-        double sum = 0;
-        for (double d : data) sum += d;
-        return sum / data.size();
-    }
-
-    private static double calculateStdDev(List<Double> data, double mean) {
-        double sum = 0;
-        for (double d : data) {
-            sum += Math.pow(d - mean, 2);
-        }
-        return Math.sqrt(sum / data.size());
     }
 }
