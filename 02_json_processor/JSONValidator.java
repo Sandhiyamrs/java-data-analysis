@@ -1,6 +1,9 @@
 public class JSONValidator {
 
-    public static boolean isValidJSON(String json) {
-        return json.trim().startsWith("{") && json.trim().endsWith("}");
+    public static boolean isValidJson(String json) {
+        if (json == null || json.isEmpty()) return false;
+
+        json = json.trim();
+        return json.startsWith("{") && json.endsWith("}");
     }
 }
