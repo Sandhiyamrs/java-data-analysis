@@ -1,16 +1,17 @@
 import java.io.*;
-import java.util.*;
+import java.util.List;
 
 public class CSVWriter {
 
-    public static void writeCSV(String filePath, List<String[]> data)
+    public static void write(String filePath, List<String[]> rows)
             throws IOException {
 
-        BufferedWriter bw = new BufferedWriter(new FileWriter(filePath));
-        for (String[] row : data) {
-            bw.write(String.join(",", row));
-            bw.newLine();
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(filePath))) {
+            for (String[] row : rows) {
+                bw.write(String.join(",", row));
+                bw.newLine();
+            }
         }
-        bw.close();
     }
 }
+
