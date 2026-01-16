@@ -6,3 +6,4 @@ public class SalesDataAnalyzer {
         return sales.stream().mapToDouble(Double::doubleValue).sum();
     }
 }
+
