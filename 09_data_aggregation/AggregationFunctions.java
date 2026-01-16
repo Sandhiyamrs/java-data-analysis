@@ -7,14 +7,6 @@ public class AggregationFunctions {
     }
 
     public static double average(List<Double> data) {
-        return sum(data) / data.size();
-    }
-
-    public static double max(List<Double> data) {
-        return Collections.max(data);
-    }
-
-    public static double min(List<Double> data) {
-        return Collections.min(data);
+        return data.stream().mapToDouble(Double::doubleValue).average().orElse(0);
     }
 }
