@@ -1,4 +1,4 @@
-import java.util.List;
+import java.util.*;
 
 public class ParallelProcessor {
 
@@ -6,3 +6,4 @@ public class ParallelProcessor {
         tasks.parallelStream().forEach(Runnable::run);
     }
 }
+
