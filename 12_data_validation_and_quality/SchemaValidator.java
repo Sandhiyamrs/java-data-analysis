@@ -2,8 +2,7 @@ import java.util.*;
 
 public class SchemaValidator {
 
-    public static boolean validateHeaders(
-            List<String> headers, List<String> expected) {
-        return headers.equals(expected);
+    public static boolean validateLength(List<String[]> rows, int expected) {
+        return rows.stream().allMatch(r -> r.length == expected);
     }
 }
