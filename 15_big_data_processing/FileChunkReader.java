@@ -3,23 +3,14 @@ import java.util.*;
 
 public class FileChunkReader {
 
-    public static List<List<String>> readChunks(String file, int chunkSize)
-            throws IOException {
-
-        List<List<String>> chunks = new ArrayList<>();
-        BufferedReader br = new BufferedReader(new FileReader(file));
-        String line;
+    public static List<String> readChunk(File file, int lines) throws IOException {
         List<String> chunk = new ArrayList<>();
-
-        while ((line = br.readLine()) != null) {
-            chunk.add(line);
-            if (chunk.size() == chunkSize) {
-                chunks.add(chunk);
-                chunk = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+            String line;
+            while (lines-- > 0 && (line = br.readLine()) != null) {
+                chunk.add(line);
             }
         }
-        if (!chunk.isEmpty()) chunks.add(chunk);
-        br.close();
-        return chunks;
+        return chunk;
     }
 }
