@@ -1,10 +1,9 @@
-import java.util.List;
+import java.util.*;
 
 public class StreamingAggregator {
 
-    public static double sum(List<Double> stream) {
-        double total = 0;
-        for (double v : stream) total += v;
-        return total;
+    public static double sum(Stream<Double> stream) {
+        return stream.mapToDouble(Double::doubleValue).sum();
     }
 }
+
