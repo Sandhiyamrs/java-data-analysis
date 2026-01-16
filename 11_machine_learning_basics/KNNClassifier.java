@@ -2,18 +2,18 @@ import java.util.*;
 
 public class KNNClassifier {
 
-    public static int predict(
-            List<double[]> train, List<Integer> labels,
-            double[] test, int k) {
+    public static int classify(
+            double[] input,
+            List<double[]> data,
+            List<Integer> labels,
+            int k) {
 
-        List<Integer> nearest = new ArrayList<>();
+        List<Integer> neighbors = new ArrayList<>();
 
-        for (int i = 0; i < train.size(); i++) {
-            nearest.add(labels.get(i));
+        for (int i = 0; i < data.size(); i++) {
+            neighbors.add(labels.get(i));
+            if (neighbors.size() == k) break;
         }
-        return nearest.stream()
-                .limit(k)
-                .max(Integer::compare)
-                .orElse(0);
+        return neighbors.get(0);
     }
 }
