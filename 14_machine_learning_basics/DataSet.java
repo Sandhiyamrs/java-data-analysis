@@ -1,19 +1,12 @@
-import java.util.List;
+import java.util.*;
 
 public class DataSet {
-    private List<double[]> features;
-    private List<Integer> labels;
 
-    public DataSet(List<double[]> features, List<Integer> labels) {
-        this.features = features;
-        this.labels = labels;
-    }
+    public List<double[]> features;
+    public List<Integer> labels;
 
-    public List<double[]> getFeatures() {
-        return features;
-    }
-
-    public List<Integer> getLabels() {
-        return labels;
+    public DataSet(List<double[]> f, List<Integer> l) {
+        features = f;
+        labels = l;
     }
 }
