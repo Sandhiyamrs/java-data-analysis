@@ -2,11 +2,7 @@ import java.util.*;
 
 public class AggregationValidator {
 
-    public static boolean validateInput(
-            List<String> keys, List<Double> values) {
-        return keys != null &&
-               values != null &&
-               keys.size() == values.size() &&
-               !keys.isEmpty();
+    public static boolean validate(List<?> keys, List<?> values) {
+        return keys.size() == values.size();
     }
 }
