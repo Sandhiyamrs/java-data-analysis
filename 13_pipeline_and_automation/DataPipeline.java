@@ -2,7 +2,7 @@ import java.util.*;
 
 public class DataPipeline {
 
-    private List<PipelineStep> steps = new ArrayList<>();
+    private final List<PipelineStep> steps = new ArrayList<>();
 
     public void addStep(PipelineStep step) {
         steps.add(step);
