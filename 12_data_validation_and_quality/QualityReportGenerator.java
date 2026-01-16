@@ -1,8 +1,12 @@
+import java.util.*;
+
 public class QualityReportGenerator {
 
-    public static void report(boolean status) {
-        System.out.println(
-            status ? "Data Quality: PASS" : "Data Quality: FAIL"
-        );
+    public static Map<String, Boolean> generate(boolean... checks) {
+        Map<String, Boolean> report = new HashMap<>();
+        for (int i = 0; i < checks.length; i++) {
+            report.put("Check_" + (i + 1), checks[i]);
+        }
+        return report;
     }
 }
